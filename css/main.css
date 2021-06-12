@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    width: 100vw;
+    height: 60px;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a{
+    margin-right: 15px;
+    color: #000000de;
+}
+
+nav .nav-right-section a:hover {
+    text-decoration: underline;
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-right-section .menu-icon:hover{
+    background-color: #3c404314;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav-right-section a img {
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 0;
+    width: 32px;
+    height: 32px;
+}
+
+main{ 
+    margin-top: 100px;
+    text-align: center;
+}
+
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img {
+    width: 272px;
+    height: 92px;
+}
+
+main .main-input {
+    width: 100vw;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container {
+    width: 49vw;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input {
+    width: 42vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: none;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon{
+    background-image: url('https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-icono-de-b-uacute-squeda-by-vexels.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0px 15px 0px 15px;
+    width: 20px;
+    height: 20px;
+}
+
+main .main-input .micro-icon{
+    background-image: url('https://i.pinimg.com/originals/ea/5f/5b/ea5f5bd3b4110f2afb958049b4096d3a.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0px 15px 0px 15px;
+    width: 24px;
+    height: 24px;
+}
+
+main .main-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+main .main-buttons div button {
+    background-color:#f8f9fa;
+    border: none;
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 11px 16px;
+    margin: 0px 4px;
+}
+
+main .main-buttons div button:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
+}
+
+footer{
+    background-color: #f2f2f2;
+    color: #0000008a;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+footer .fila1 {
+    border-bottom: 1px solid #dadce0;
+    background-color: #f2f2f2;
+    font-size: 15px;
+    padding: 15px 30px;
+}
+
+footer .fila2 {
+    background-color: #f2f2f2;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .fila2 .bloque1{
+    display: inline-flex;
+}
+
+footer .fila2 .bloque2{
+    display: inline-flex;
+}
+
+footer .fila2 .fila2-elemento {
+    color: #0000008a;
+    text-decoration: none;
+    padding: 0px 15px;
+}
+
+footer .fila2 .fila2-elemento:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ------------ RESPONSIVE DESIGN ------------ */
+
+@media (max-width: 700px) {
+  main .main-logo{
+    width: 100vw;
+    margin: 0 auto 2vh auto;
+  }
+  main .main-logo img {
+    width: 50vw;
+    height: auto;
+  }
+  main .main-input-container {
+    width: 90vw;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  main .main-input .search-icon{
+    width: 30px;
+    height: 30px;
+  }
+  main .main-input input{
+    width: 80vw;
+  }
+  main .main-input .micro-icon{
+    width: 40px;
+    height: 40px;
+  }
+  footer .fila2 {
+    display: block;
+    justify-content: center;
+  }
+  footer .fila2 .bloque1{
+    display: flex;
+    justify-content: center;
+  }
+  footer .fila2 .bloque2{
+    display: flex;
+    justify-content: center;    
+  }
+  footer .fila2 .fila2-elemento {
+    text-decoration: none;
+    justify-content: center;
+    padding: 10px 5px;
+  }
+}
